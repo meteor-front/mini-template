@@ -1,0 +1,144 @@
+<view class="margin">
+  固定尺寸
+  </view>
+<view class="padding bg-white">
+    <view class="flex flex-wrap">
+      <view class="basis-xs bg-grey margin-xs padding-sm ">xs(20%)</view>
+      <view class="basis-df"></view>
+      <view class="basis-sm bg-grey margin-xs padding-sm ">sm(40%)</view>
+      <view class="basis-df"></view>
+      <view class="basis-df bg-grey margin-xs padding-sm ">sub(50%)</view>
+      <view class="basis-lg bg-grey margin-xs padding-sm ">lg(60%)</view>
+      <view class="basis-xl bg-grey margin-xs padding-sm ">xl(80%)</view>
+    </view>
+  </view>
+  <view class="margin">
+    比例布局
+  </view>
+  <view class="padding bg-white">
+    <view class="flex">
+      <view class="flex-sub bg-grey padding-sm margin-xs ">1</view>
+      <view class="flex-sub bg-grey padding-sm margin-xs ">1</view>
+    </view>
+    <view class="flex ">
+      <view class="flex-sub bg-grey padding-sm margin-xs ">1</view>
+      <view class="flex-twice bg-grey padding-sm margin-xs ">2</view>
+    </view>
+    <view class="flex  ">
+      <view class="flex-sub bg-grey padding-sm margin-xs ">1</view>
+      <view class="flex-twice bg-grey padding-sm margin-xs ">2</view>
+      <view class="flex-treble bg-grey padding-sm margin-xs ">3</view>
+    </view>
+  </view>
+  <view class="margin">
+    水平对齐(justify)
+  </view>
+  <view class="bg-white">
+    <view class="flex solid-bottom padding justify-start">
+      <view class="bg-grey padding-sm margin-xs ">start</view>
+      <view class="bg-grey padding-sm margin-xs ">start</view>
+    </view>
+    <view class="flex solid-bottom padding justify-end">
+      <view class="bg-grey padding-sm margin-xs ">end</view>
+      <view class="bg-grey padding-sm margin-xs ">end</view>
+    </view>
+    <view class="flex solid-bottom padding justify-center">
+      <view class="bg-grey padding-sm margin-xs ">center</view>
+      <view class="bg-grey padding-sm margin-xs ">center</view>
+    </view>
+    <view class="flex solid-bottom padding justify-between">
+      <view class="bg-grey padding-sm margin-xs ">between</view>
+      <view class="bg-grey padding-sm margin-xs ">between</view>
+    </view>
+    <view class="flex solid-bottom padding justify-around">
+      <view class="bg-grey padding-sm margin-xs ">around</view>
+      <view class="bg-grey padding-sm margin-xs ">around</view>
+    </view>
+  </view>
+  <view class="margin">
+    垂直对齐(align)
+  </view>
+  <view class="bg-white">
+    <view class="flex solid-bottom padding align-start">
+      <view class="bg-grey padding-lg margin-xs ">zlst</view>
+      <view class="bg-grey padding-sm margin-xs ">start</view>
+    </view>
+    <view class="flex solid-bottom padding align-end">
+      <view class="bg-grey padding-lg margin-xs ">zlst</view>
+      <view class="bg-grey padding-sm margin-xs ">end</view>
+    </view>
+    <view class="flex solid-bottom padding align-center">
+      <view class="bg-grey padding-lg margin-xs ">zlst</view>
+      <view class="bg-grey padding-sm margin-xs ">center</view>
+    </view>
+  </view>
+
+  <view class="bg-white">
+    <view class="padding bg-gray">{size}的尺寸有xs/sm/df/lg/xl</view>
+    <view class="flex flex-wrap padding solid-top">
+      <view class="basis-df padding-bottom-xs">外边距</view>
+      <view class="basis-df padding-bottom-xs">内边距</view>
+      <view class="basis-df">.margin-{size}</view>
+      <view class="basis-df">.padding-{size}</view>
+    </view>
+    <view class="flex flex-wrap padding solid-top">
+      <view class="basis-df padding-bottom-xs">水平方向外边距</view>
+      <view class="basis-df padding-bottom-xs">水平方向内边距</view>
+      <view class="basis-df">.margin-lr-{size}</view>
+      <view class="basis-df">.padding-lr-{size}</view>
+    </view>
+    <view class="flex flex-wrap padding solid-top">
+      <view class="basis-df padding-bottom-xs">垂直方向外边距</view>
+      <view class="basis-df padding-bottom-xs">垂直方向内边距</view>
+      <view class="basis-df">.margin-tb-{size}</view>
+      <view class="basis-df">.padding-tb-{size}</view>
+    </view>
+    <view class="flex flex-wrap padding solid-top">
+      <view class="basis-df padding-bottom-xs">上外边距</view>
+      <view class="basis-df padding-bottom-xs">上内边距</view>
+      <view class="basis-df">.margin-top-{size}</view>
+      <view class="basis-df">.padding-top-{size}</view>
+    </view>
+    <view class="flex flex-wrap padding solid-top">
+      <view class="basis-df padding-bottom-xs">右外边距</view>
+      <view class="basis-df padding-bottom-xs">右内边距</view>
+      <view class="basis-df">.margin-right-{size}</view>
+      <view class="basis-df">.padding-right-{size}</view>
+    </view>
+    <view class="flex flex-wrap padding solid-top">
+      <view class="basis-df padding-bottom-xs">下外边距</view>
+      <view class="basis-df padding-bottom-xs">下内边距</view>
+      <view class="basis-df">margin-bottom-{size}</view>
+      <view class="basis-df">.padding-bottom-{size}</view>
+    </view>
+    <view class="flex flex-wrap padding solid-top">
+      <view class="basis-df padding-bottom-xs">左外边距</view>
+      <view class="basis-df padding-bottom-xs">左内边距</view>
+      <view class="basis-df">.margin-left-{size}</view>
+      <view class="basis-df">.padding-left-{size}</view>
+    </view>
+  </view>
+  <view class="margin">
+    深色背景
+  </view>
+  <van-grid column-num="4" >
+  <van-grid-item use-slot wx:for="{{ColorList}}" wx:key="index">
+    <view class="bg-{{item.name}} padding  text-center">
+      <view class="text-lg">{{item.title}}</view>
+      <view class="margin-top-sm text-Abc">{{item.name}}</view>
+    </view>
+  </van-grid-item>
+</van-grid>
+
+<view class="margin">
+  淡色背景
+  </view>
+  <van-grid column-num="4" >
+  <van-grid-item use-slot wx:for="{{ColorList}}" wx:key="index">
+    <view class="bg-{{item.name}} padding  text-center light">
+      <view class="text-lg">{{item.title}}</view>
+      <view class="margin-top-sm text-Abc">{{item.name}}</view>
+    </view>
+  </van-grid-item>
+</van-grid>
+

@@ -1,0 +1,5 @@
+<swiper class="{{swiperStyle}} {{dotStyle}} " indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500"  bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+  <swiper-item class="swiper-item" wx:for="{{swiperList}}" wx:key="index" class="{{cardCur==index?'cur':''}}" bindtap="onTap" data-index="{{index}}">
+    <image class="bg-img " src="{{item.url}}" mode="aspectFill"></image>
+  </swiper-item>
+</swiper>

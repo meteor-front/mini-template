@@ -1,0 +1,23 @@
+<van-cell-group title="基础页面" custom-class="margin-lr">
+  <van-cell title="布局和颜色" link-type="navigateTo"
+  url="/pages/demo/layout/index" size="large"  is-link/>
+</van-cell-group>
+
+<van-cell-group title="自定义组件" custom-class="margin-lr">
+  <van-cell title="导航栏" link-type="navigateTo"
+  url="/pages/demo/layout/index" size="large"  is-link/>
+  <van-cell title="轮播图" link-type="navigateTo"
+  url="/pages/demo/swiper/index" size="large"  is-link/>
+  <van-cell title="上传组件" link-type="navigateTo"
+  url="/pages/demo/upload/index" size="large"  is-link/>
+</van-cell-group>
+
+
+<van-cell-group title="商品相关" custom-class="margin-lr">
+  <van-cell title="商品列表" link-type="navigateTo"
+  url="/pages/demo/shop/list/index" size="large"  is-link/>
+  <van-cell title="购物车" link-type="navigateTo"
+  url="/pages/demo/shop/car/index" size="large"  is-link/>
+  <van-cell title="下单结算" link-type="navigateTo"
+  url="/pages/demo/shop/confirmOrder/index" size="large"  is-link/>
+</van-cell-group>

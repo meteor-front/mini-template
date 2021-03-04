@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "cu-swiper":"../../../components/swiper/swiper"
+  }
+}

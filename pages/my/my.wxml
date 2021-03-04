@@ -1,0 +1,54 @@
+<image src="../../images/user_bg.jpg" class="bg-top" mode="widthFix"></image>
+<view class="content-view">
+	<view class="content bg-white">
+		<view class="text-center text-black text-blod text-xxl" style="padding-top:100rpx;" bindtap="showlogin">
+			{{userInfo.nickName}}
+		</view>
+		<view class="text-center text-gray margin-sm">
+			<text >这是一个描述信息</text>
+		</view>
+
+
+		<view class='padding flex text-center text-grey  '>
+			<view class='flex flex-sub flex-direction solid-right'>
+				<view class="text-xxl text-black">23</view>
+				<view class="margin-top-sm">
+					累计查看</view>
+			</view>
+			<view class='flex flex-sub flex-direction'>
+				<view class="text-xxl text-black">23</view>
+				<view class="margin-top-sm">
+					累计上传</view>
+			</view>
+		</view>
+	</view>
+	<view class="content bg-white margin-top margin-bottom">
+		<button class="flex justify-between align-center form-style" style="width:94vw;font-weight:normal;" open-type="contact">
+			<view>联系我们</view>
+			<van-icon name="chat-o" />
+		</button>
+		<view class="line"></view>
+		<navigator url="../about/about">
+			<view class="flex justify-between align-center form-style">
+				<view>关于我们</view>
+				<van-icon name="newspaper-o" />
+			</view>
+		</navigator>
+		<view class="line"></view>
+		<button class="flex justify-between align-center form-style" style="width:94vw;font-weight:normal;" open-type="openSetting">
+			<view>通知设置</view>
+			<van-icon name="volume-o" />
+		</button>
+		<view class="line"></view>
+		<button class="flex justify-between align-center form-style" style="width:94vw;font-weight:normal;" open-type="feedback">
+			<view>意见反馈</view>
+			<van-icon name="orders-o" />
+		</button>
+	</view>
+</view>
+
+<view class="flex justify-center avatar-view">
+	<view class="avatar-border">
+		<image class="avatar-style" src="{{userInfo.avatarUrl}}"></image>
+	</view>
+</view>

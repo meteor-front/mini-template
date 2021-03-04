@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "布局和颜色",
+  "usingComponents": {
+    "van-grid": "@vant/weapp/grid/index",
+     "van-grid-item": "@vant/weapp/grid-item/index" }
+}

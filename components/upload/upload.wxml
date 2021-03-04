@@ -1,0 +1,1 @@
+  <van-uploader file-list="{{ fileList }}" multiple="{{true}}" max-count="2" bind:after-read="afterRead" />

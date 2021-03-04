@@ -1,0 +1,32 @@
+<van-swipe-cell right-width="{{ 65 }}" wx:for="{{3}}">
+  <view class="flex align-center bg-white">
+    <van-checkbox custom-class="margin-left" name="a"></van-checkbox>
+  <van-card
+  custom-class="bg-white solid-bottom"
+  title-class="text-df"
+  tag="秒杀"
+  price="6839.00 "
+  origin-price="8999.00"
+  desc="下单立减，前50名下单再享好礼"
+  title="五粮液 普五 第八代 52度 浓香型白酒 500ml*6瓶 整箱"
+  thumb="https://img01.yzcdn.cn/vant/ipad.jpeg"
+>
+<view slot="tags">
+  <van-tag type="primary">限购</van-tag>
+<van-tag custom-class="margin-left-xs" type="success">满减</van-tag> </view>
+<van-stepper slot="footer" value="{{ 1 }}" bind:change="onChange" /> 
+</van-card>
+  </view>
+<view class="van-swipe-cell__right " slot="right">
+  删除
+</view>
+</van-swipe-cell>
+<van-submit-bar
+  price="{{ 3050 }}"
+  button-text="立即购买"
+  bind:submit="onClickButton"
+  tip="{{ true }}"
+>
+<van-checkbox value="{{ checked }}" bind:change="onChangeChecked">全选</van-checkbox>
+  <view slot="tip">您的收货地址不支持同城送, <text>修改地址</text></view>
+</van-submit-bar>

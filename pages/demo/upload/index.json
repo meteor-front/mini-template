@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "cu-upload":"../../../components/upload/upload"
+  }
+}

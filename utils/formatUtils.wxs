@@ -1,0 +1,74 @@
+var u = {
+  toFix: function (value) {
+    if (typeof (value) == 'undefined') {
+      return value
+    } else {
+      return value.toFixed(2)
+    }
+  },
+  formatDate: function (date) {
+    var date = getDate(date * 1000);
+    var YY = date.getFullYear() + '-';
+    var MM = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-';
+    var DD = (date.getDate() < 10 ? '0' + (date.getDate()) : date.getDate());
+    return YY + MM + DD
+  },
+  payStatus: function (value) {
+    if (value == 1) {
+      return '未支付'
+    } else if (value == 2) {
+      return '已支付'
+    } else if (value == 3) {
+      return '已退款'
+    }
+  },
+  orderStatus: function (value) {
+    if (value == 1) {
+      return '待付款'
+    } else if (value == 2) {
+      return '待接单'
+    } else if (value == 3) {
+      return '商家接单'
+    } else if (value == 4) {
+      return '待派送'
+    } else if (value == 5) {
+      return '派送中'
+    } else if (value == 6) {
+      return '已完成'
+    } else if (value == 7) {
+      return '售后'
+    } else if (value == 8) {
+      return '超时取消'
+    } else if (value == 8) {
+      return '取消'
+    }
+  },
+  expressType: function (value) {
+    if (value == 1) {
+      return '商家派送'
+    } else if (value == 2) {
+      return '骑手派送'
+    }
+  },
+  expressStatus: function (value) {
+    if (value == 1) {
+      return '未接单'
+    } else if (value == 2) {
+      return '已接单'
+    } else if (value == 3) {
+      return '已取货'
+    } else if (value == 4) {
+      return '派送中'
+    } else if (value == 5) {
+      return '派送完成'
+    }
+  }
+}
+module.exports = {
+  toFixs: u.toFix,
+  formatDate: u.formatDate,
+  payStatus: u.payStatus,
+  expressType: u.expressType,
+  expressStatus: u.expressStatus,
+  orderStatus: u.orderStatus,
+}

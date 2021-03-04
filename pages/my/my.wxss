@@ -1,0 +1,69 @@
+/* pages/me/me.wxss */
+page {
+  background-color: #F8F8F8;
+}
+
+.card-style {
+  background: linear-gradient(to left, #3746A7 0%, #7a72d4 100%);
+  box-shadow: 2rpx 3rpx 10rpx rgba(59, 66, 129, 0.5);
+  color: #fff;
+  border-radius: 15rpx;
+}
+
+.text-change {
+  color: #3746A7;
+}
+
+.bg-top {
+  width: 100vw;
+}
+.content-view{
+  top: 350rpx;
+  position: absolute;
+}
+.content {
+  width: 94vw;
+  /* top: 350rpx; */
+  left: 3vw;
+  border-radius: 15rpx;
+  position: relative;
+}
+
+.avatar-view {
+  position: absolute;
+  width: 100vw;
+  top: 260rpx;
+}
+
+.avatar-border {
+  border-radius: 85rpx;
+  width: 170rpx;
+  height: 170rpx;
+  background-color: #ffffff;
+}
+
+.avatar-style {
+  border-radius: 75rpx;
+  width: 150rpx;
+  height: 150rpx;
+  margin: 10rpx;
+}
+.form-style{
+  height: 120rpx;
+  font-size: 33rpx;
+  color: #262629;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.line{
+  background-color: #F8F8F8;
+  height: 1rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+button::after{ border: none;} 
+button {
+  background-color: #fff;
+}
+
+

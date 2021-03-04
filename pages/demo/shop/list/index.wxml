@@ -1,0 +1,18 @@
+<van-card
+custom-class="margin-sm"
+title-class="text-df"
+wx:for="{{3}}"
+  tag="秒杀"
+  price="6839.00 "
+  origin-price="8999.00"
+  desc="下单立减，前50名下单再享好礼"
+  title="五粮液 普五 第八代 52度 浓香型白酒 500ml*6瓶 整箱"
+  thumb="https://img01.yzcdn.cn/vant/ipad.jpeg"
+>
+<view slot="tags">
+  <van-tag type="primary">限购</van-tag>
+<van-tag custom-class="margin-left-xs" type="success">满减</van-tag> </view>
+<view slot="footer">
+    <van-button round type="danger" size="mini">立即购买</van-button>
+  </view>
+</van-card>

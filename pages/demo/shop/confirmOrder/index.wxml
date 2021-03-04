@@ -1,0 +1,27 @@
+<view class="flex justify-between align-center address padding bg-white">
+  <view>
+    <view class="text-black text-df">收货人姓名 <text>156****1234</text></view>
+    <view>湖南省长沙市岳麓区兴工产业园123号</view>
+  </view>
+  <van-icon name="arrow" />
+</view>
+
+<van-card custom-class="margin-top-sm bg-white" title-class="text-df" tag="秒杀" price="6839.00 " origin-price="8999.00"
+  desc="下单立减，前50名下单再享好礼" title="五粮液 普五 第八代 52度 浓香型白酒 500ml*6瓶 整箱" thumb="https://img01.yzcdn.cn/vant/ipad.jpeg">
+  <view slot="tags">
+    <van-tag type="primary">限购</van-tag>
+    <van-tag custom-class="margin-left-xs" type="success">满减</van-tag>
+  </view>
+  <van-stepper slot="footer" value="{{ 1 }}" bind:change="onChange" />
+</van-card>
+
+<van-cell-group custom-class="margin-top-sm">
+  <van-cell title="商品金额" value="40.00" size="large"/>
+  <van-cell title="单元格" value="内容" size="large" label="描述信息"  />
+  <van-cell title="单元格" is-link size="large" value="内容" />
+</van-cell-group>
+
+<van-submit-bar price="{{ 3050 }}" button-text="立即购买" bind:submit="onClickButton" tip="{{ true }}">
+  <van-checkbox value="{{ checked }}" bind:change="onChangeChecked">全选</van-checkbox>
+  <view slot="tip">您的收货地址不支持同城送, <text>修改地址</text></view>
+</van-submit-bar>

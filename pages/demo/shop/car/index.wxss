@@ -1,0 +1,11 @@
+/* pages/demo/shop/car/index.wxss */
+.van-swipe-cell__right {
+  display: inline-block;
+  width: 65px;
+  height: 100%;
+  font-size: 15px;
+  line-height: 230rpx;
+  color: #fff;
+  text-align: center;
+  background-color: #ee0a24;
+}

@@ -1,0 +1,8 @@
+<view class="margin">
+  全屏限高轮播
+</view>
+<cu-swiper swiperStyle="screen-swiper" dotStyle="round-dot" swiperList="{{swiperList}}" bind:onClickItem="onClickItem"></cu-swiper>
+<view class="margin">
+  卡片试轮播
+</view>
+<cu-swiper swiperStyle="card-swiper" dotStyle="square-dot" swiperList="{{swiperList}}" bind:onClickItem="onClickItem"></cu-swiper>

@@ -1,0 +1,6 @@
+{
+  "navigationStyle":"custom",
+  "usingComponents": {
+    "actionbar":"../../components/actionbar/actionbar"
+  }
+}

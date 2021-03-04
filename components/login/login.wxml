@@ -1,0 +1,20 @@
+<view class="cu-modal  {{modalName=='loginModal'?'show':''}}">
+  <view class="cu-dialog" >
+    <view class="cu-bar bg-white justify-end">
+      <view class='content'>登录</view>
+      <view class='action' bindtap='hideModal'>
+        <text class='icon-close text-purple'></text>
+      </view>
+    </view>
+      <view class='padding-xl'>
+       点击【确定】按钮将允许【xxxx】获取您的基本用户信息。
+      </view>
+      <view class="cu-bar bg-white justify-center">
+      <view class='action'>
+        <button class='cu-btn line-red text-red round'  style="width: 20vw;margin-right:20rpx" bindtap='hideModal'>取消</button>
+        <button class='cu-btn bg-red margin-left round '  style="width: 20vw" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" >确定</button>
+
+      </view>
+    </view>
+    </view>
+  </view>
