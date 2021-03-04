@@ -1,7 +1,7 @@
 <image src="../../images/user_bg.jpg" class="bg-top" mode="widthFix"></image>
 <view class="content-view">
 	<view class="content bg-white">
-		<view class="text-center text-black text-blod text-xxl" style="padding-top:100rpx;" bindtap="showlogin">
+		<view class="text-center text-black text-blod text-xxl" style="padding-top:100rpx;" bindtap="showLogin">
 			{{userInfo.nickName}}
 		</view>
 		<view class="text-center text-gray margin-sm">
@@ -52,3 +52,4 @@
 		<image class="avatar-style" src="{{userInfo.avatarUrl}}"></image>
 	</view>
 </view>
+<login  id="loginId"></login>

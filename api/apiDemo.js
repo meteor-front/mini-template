@@ -3,13 +3,13 @@ import request from '../utils/request'
 /**
 */
 export function getError(params) {
-  return request.get(`/error`, { params })
+  return request.get(`/api/s/view/${params.id}`, {})
 }
 
 /**
 */
-export function headError(data) {
-  return request.head(`/error`, data)
+export function upload(data) {
+  return request.upload(`/error`, data)
 }
 
 /**

@@ -1,17 +1,28 @@
 const app = getApp();
 const apiDemo = require('../../api/apiDemo.js');
 import create from '../../utils/create'
-create.Component({
-  use: ['modalName'],
+import store from '../../store/index'
+create.Component(store,{
+  use: [],
+  data:{
+    modalName:''
+  },
   /**
    * 组件的方法列表
    */
   methods: {
     hideModal() {
-      this.store.data.modalName = ''
+      this.setData({
+        modalName:''
+      })
+      // this.modalName = ''
     },
     showModal() {
-      this.store.data.modalName = 'loginModal'
+      this.setData({
+        modalName:'loginModal'
+      })
+      // this.modalName = 'loginModal'
+      // console.log(this.modalName)
     },
     onGotUserInfo: function (e) {
       this.hideModal()

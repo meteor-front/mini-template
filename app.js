@@ -1,4 +1,4 @@
-// app.js
+const apiDemo = require('./api/apiDemo.js');
 App({
   onLaunch() {
     // 展示本地存储能力
@@ -7,6 +7,11 @@ App({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
+    })
+    apiDemo.getError({
+      "id": 1
+    }).then((res) => {
+     console.log(res)
     })
     wx.getSystemInfo({
       success: e => {

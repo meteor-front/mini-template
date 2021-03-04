@@ -1,4 +1,3 @@
-// pages/my/my.js
 Page({
 
   /**
@@ -7,7 +6,7 @@ Page({
   data: {
     userInfo:{
       avatarUrl:"../../images/default_avatar.jpg",
-      nickName:"一个可用的昵称"
+      nickName:"点我登录"
     }
   },
 
@@ -22,8 +21,8 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-
+  showLogin: function () {
+    this.selectComponent("#loginId").showModal();
   },
 
   /**

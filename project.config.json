@@ -68,8 +68,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/demo/shop/confirmOrder/index",
-          "pathName": "pages/demo/shop/confirmOrder/index",
+          "name": "pages/my/my",
+          "pathName": "pages/my/my",
           "query": "",
           "scene": null
         }
